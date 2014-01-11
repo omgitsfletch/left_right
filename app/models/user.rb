@@ -13,11 +13,4 @@ class User < ActiveRecord::Base
 		joins(:role).
 		where(:roles => { :name => role_name })
 	}
-
-	# Typically should not crowd a model with methods related to data presentation
-	# logic. However, making an exception for the simple, single case needed here.
-	def full_name
-		"#{self.first_name} #{self.last_name}"
-	end
-
 end

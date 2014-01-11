@@ -2,7 +2,7 @@ class UsersController < ApplicationController
 
 	respond_to :json
 	def index
-		if !params[:role].blank?
+		if params[:role].present?
 			@users = User.with_role(params[:role])
 		else
 			@users = User.all

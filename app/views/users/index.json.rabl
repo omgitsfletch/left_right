@@ -3,8 +3,3 @@ extends 'users/show'
 
 # Declare the data source
 collection @users
-
-# Include user as child node, reusing the User 'show' template
-child :role do
-  attributes :id, :name
-end
