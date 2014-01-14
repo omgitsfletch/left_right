@@ -8,7 +8,7 @@ Ext.define("LeftRightApp.view.Viewport" , {
 		{
 			region: 'north',
 			xtype: 'header_bar',
-			height: 50
+			height: 100
 		},{
 			region: 'west',
 			xtype: 'sidebar',
